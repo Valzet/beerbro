@@ -1,0 +1,16 @@
+.copyright {
+    padding: 20px 0;
+
+    background-color: #241e18;
+}
+
+.copyright__text {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #808080;
+}
+
+.copyright__text span {
+    color: #fff;
+}
