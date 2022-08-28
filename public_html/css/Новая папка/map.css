@@ -1,21 +1,23 @@
 
-.download {
-    margin: 15px 0;
-
-    text-align: center;
+.map {
+    margin: 20px auto;
+    /* text-align: center; */
 }
 
-.download__title {
+/* .map__title {
     margin-bottom: 10px;
-
     font-size: 40px;
     color: #2d3033;
     font-weight: 500;
 }
 
-.download__text {
+.map__text {
     margin-bottom: 15px;
     font-size: 13px;
     color: #2d3033;
     font-weight: 700;
+} */
+
+.ymaps-2-1-79-copyright__link {
+    font-size: 10px;
 }

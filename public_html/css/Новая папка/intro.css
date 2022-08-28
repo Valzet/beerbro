@@ -39,29 +39,23 @@
 }
 
 
-.btn {
+.call-button {
     display: inline-block;
     vertical-align: top;
     padding: 14px 40px;
-
     border-radius: 2px;
     border: 0;
     cursor: pointer;
-
     font-family: 'Podkova', serif;
     font-size: 16px;
     color: #fff;
     font-weight: 500;
     text-transform: uppercase;
     text-decoration: none;
-
     transition: background .1s linear;
-}
-
-.btn--red {
     background-color: #a93e3e;
 }
 
-.btn--red:hover {
+.call-button:hover {
     background-color: #dd3434;
 }
