@@ -3,23 +3,21 @@
 
 <head>
 	<meta charset="utf-8">
+
 	<script src="https://kit.fontawesome.com/4c3365df1a.js" crossorigin="anonymous"></script>
 	<title>Beer Bro Bar</title>
 	<meta name="description" content="Beer Bro Bar. Бар на Долгоозерной улице Санкт-Петербурга">
 	<!-- заменить иконки -->
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link rel="letterB" href="img/favicon/letterB.png">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="css/style.css">
-	<script src="libs/modernizr/modernizr.js"></script>
+
 
 </head>
 
 <body>
-	<!-- HEADER -->
 	<header class="header">
 		<div class="container">
 			<div class="header__inner">
@@ -36,7 +34,10 @@
 		</div>
 	</header>
 
-	<!-- Intro -->
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
+
 	<div class="intro" id="intro">
 		<div class="container">
 			<div class="intro__inner">
@@ -47,8 +48,6 @@
 			</div>
 		</div>
 	</div>
-
-	<!-- futures -->
 	<div class="futures" id="futures">
 		<div class="futures__item">
 			<img class="futures__photo" src="img/future-1.jpg" alt="">
@@ -89,7 +88,6 @@
 				<div class="futures__text">Лучшие горячие блюда и пивные закуски</div>
 			</div>
 		</div>
-
 		<div class="futures__item">
 			<img class="futures__photo" src="img/future-6.jpg" alt="">
 			<div class="futures__content">
@@ -97,22 +95,46 @@
 				<div class="futures__text">Поможем определиться с выбором пива</div>
 			</div>
 		</div>
-
 	</div>
 	</div>
 
-	<!-- Download -->
+
+	<section class="menu">
+		<div class="menu__buttons">
+			<button class="menu__button">след</button>
+			<button class="menu__button">пред</button>
+		</div>
+
+		<div class="menu__container">
+			<div class="menu__item menu__item_type_active">
+				<h3 class="">1(первый)</h3>
+				<img src="img/future-5.jpg">
+			</div>
+			<div class="menu__item menu__item_type_next">
+				<h3 class="">2</h3>
+				<img src="img/future-4.jpg">
+			</div>
+
+			<div class="menu__item ">
+				<h3 class="">3</h3>
+				<img src="img/future-3.jpg">
+			</div>
+			<div class="menu__item ">
+				<h3 class="">4</h3>
+				<img src="img/future-2.jpg">
+			</div>
+			<div class="menu__item menu__item_type_prev">
+				<h3 class="">5(последний)</h3>
+				<img src="img/future-1.jpg">
+			</div>
+		</div>
+	</section>
+
+
 	<div class="map">
-		<!-- <div class="container"> -->
-		<!-- <h2 class="map__title">КОНТАКТЫ</h2> -->
-		<!-- <div class="map__text"> -->
 		<script type="text/javascript" charset="utf-8" async
 			src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af2d6985c3137a05149120babb8818a75cf66c0cd8fd6813ebe0115aa37114dbf&amp;width=100%&amp;height=557&amp;lang=ru_RU&amp;scroll=true"></script>
-		<!-- </div> -->
-		<!-- </div> -->
 	</div>
-
-	<!-- Footer -->
 	<footer class="footer" id="#contacts">
 		<div class="container">
 
@@ -159,9 +181,6 @@
 		</div>
 	</footer>
 
-	<script src="js/common.js"></script>
-
-
 	<!-- Yandex.Metrika counter -->
 	<script type="text/javascript">
 		(function (m, e, t, r, i, k, a) {
@@ -180,6 +199,9 @@
 		<div><img src="https://mc.yandex.ru/watch/73340065" style="position:absolute; left:-9999px;" alt="" /></div>
 	</noscript>
 	<!-- /Yandex.Metrika counter -->
+
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="js/common.js"></script>
 
 </body>
 

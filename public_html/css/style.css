@@ -6,6 +6,7 @@
 @import url(../css/map.css);
 @import url(../css/footer.css);
 @import url(../css/copyright.css);
+@import url(../css/menu.css);
 
 body {
     margin: 0;
@@ -45,6 +46,33 @@ p {
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
+}
+
+
+.loader {
+	background: none repeat scroll 0 0 #ffffff;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+}
+.loader_inner {
+	background-image: url("../img/preloader.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #fff;
+	height: 60px;
+	width: 60px;
+	margin-top: -30px;
+	margin-left: -30px;
+	left: 50%;
+	top: 50%;
+	position: absolute;
 }
 
 /* Media

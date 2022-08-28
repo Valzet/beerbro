@@ -38,7 +38,7 @@
             display: inline-block;
             vertical-align: top;
             padding: 14px 40px;
-            border-radius: 2px;
+            border-radius: 4px;
             border: 0;
             cursor: pointer;
             font-family: 'Podkova', serif;
@@ -47,13 +47,16 @@
             font-weight: 500;
             text-transform: uppercase;
             text-decoration: none;
-            transition: background .1s linear;
+            transition: background .4s ease-in-out;
             background-color: #a93e3e;
+            box-shadow: 3px 3px 3px #a54c4c;
         }
-
         .call-button:hover {
             background-color: #dd3434;
+            
         }
     }
 
+
 }
+
