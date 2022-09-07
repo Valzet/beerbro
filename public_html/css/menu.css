@@ -1,46 +1,87 @@
 .menu {
+  background-color: #241e18;
+  background: url("../img/intro-bg2.jpg") repeat-y 100% 0;
+  background-size: cover;
+}
+
+.menu__content {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
+  align-content: stretch;
+  max-width: 970px;
+  width: 100%;
   margin: 0 auto;
-  width: 1440px;
-  max-width: 1440px;
-  height: 390px;
+  padding: 40px 0;
 }
-.menu .menu__container {
-  display: flex;
-  justify-content: center;
-  width: 1440px;
+
+.c-header {
+  display: block;
+  width: 100%;
+}
+
+.u-a5 {
+  font-family: Arial;
+  font-size: 37px;
+  line-height: 35px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.u-media-wrapper {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 0;
+  margin: 0 20px;
+}
+.u-media-wrapper.u-media-wrapper--16-9 {
+  padding-bottom: 56.25%;
+}
+
+.c-mouse-vertical-carousel {
+  position: relative;
   overflow: hidden;
-  margin: 0 auto;
 }
-.menu .menu__container .menu__item {
-  display: none;
-  background-color: white;
-  max-width: 718px;
-  width: 718px;
-  opacity: 0.4;
-  left: 80%;
-  transition: all 1s ease;
-}
-.menu .menu__container .menu__item_type_active {
-  display: block;
+.c-mouse-vertical-carousel__list {
+  width: 100%;
   position: absolute;
-  left: 35%;
-  opacity: 1;
+  left: 0;
+  top: 20%;
+  z-index: 1;
+  list-style: none;
 }
-.menu .menu__container .menu__item_type_next {
+.c-mouse-vertical-carousel__list-item a {
   display: block;
-  opacity: 0.4;
-  position: absolute;
-  right: -50%;
-  transition: all 0.5s ease;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  padding-left: 54.1666666667%;
 }
-.menu .menu__container .menu__item_type_prev {
-  display: block;
-  opacity: 0.4;
+.c-mouse-vertical-carousel__eyebrow {
+  position: relative;
+  padding-bottom: 12px;
+}
+.c-mouse-vertical-carousel__eyebrow span {
   position: absolute;
-  left: -20%;
-  transition: all 0.5s ease;
+  left: -30px;
+  top: 2px;
+}
+.c-mouse-vertical-carousel__title {
+  max-width: 450px;
+}
+.c-mouse-vertical-carousel__bg-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  will-change: transform;
 }

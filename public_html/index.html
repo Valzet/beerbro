@@ -7,13 +7,12 @@
 	<script src="https://kit.fontawesome.com/4c3365df1a.js" crossorigin="anonymous"></script>
 	<title>Beer Bro Bar</title>
 	<meta name="description" content="Beer Bro Bar. Бар на Долгоозерной улице Санкт-Петербурга">
-	<!-- заменить иконки -->
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="letterB" href="img/favicon/letterB.png">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="css/style.css">
-
+	<script defer src="js/menu.js"></script>
 
 </head>
 
@@ -27,6 +26,7 @@
 				<nav class="nav">
 					<a class="nav__link" href="#intro">О нас</a>
 					<a class="nav__link" href="#futures">Преимущества</a>
+					<a class="nav__link" href="#menu">Меню</a>
 					<a class="nav__link" href="#contacts">Контакты</a>
 					<a class="nav__link" href="tel:+78123062155">8 (812) 306 21 55</a>
 				</nav>
@@ -98,35 +98,74 @@
 	</div>
 	</div>
 
+	<section class="menu" id="menu">
+		<div class="menu__content">
+			<!-- <div class="c-header c-header--archive c-header--project-list"> -->
+				<div class="c-mouse-vertical-carousel js-carousel u-media-wrapper u-media-wrapper--16-9">
+					<ul class="c-mouse-vertical-carousel__list js-carousel-list">
 
-	<section class="menu">
-		<div class="menu__buttons">
-			<button class="menu__button">след</button>
-			<button class="menu__button">пред</button>
+						<li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="0">
+							<p class="c-mouse-vertical-carousel__title u-a5">
+								пивас
+							</p>
+						</li>
+
+						<li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="1">
+
+							<p class="c-mouse-vertical-carousel__title u-a5">
+								Еще пивас
+							</p>
+						</li>
+
+						<li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="2">
+							<p class="c-mouse-vertical-carousel__title u-a5">
+								Еще пивас
+							</p>
+						</li>
+
+						<li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="3">
+							<p class="c-mouse-vertical-carousel__title u-a5">
+								Еще пивас
+							</p>
+						</li>
+
+						<li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="4">
+							<p class="c-mouse-vertical-carousel__title u-a5">
+								Еще пивас
+							</p>
+						</li>
+
+						<li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="5">
+							<p class="c-mouse-vertical-carousel__title u-a5">
+								Еще пивас
+							</p>
+						</li>
+
+						<li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="6">
+							<p class="c-mouse-vertical-carousel__title u-a5">
+								Еще пивас
+							</p>
+						</li>
+					</ul>
+
+					<i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img"
+						style="background-image: url('./img/paper-shadow-white-background-blank-paper-mockup-mockup-symbol-paper-shadow-white-background-blank-paper-214346445.jpg')"></i>
+					<i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img"
+						style="background-image: url('./img/1610303625_1408537973_a-4.jpg')"></i>
+					<i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img"
+						style="background-image: url('./img/1610303625_1408537973_a-4.jpg')"></i>
+					<i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img"
+						style="background-image: url('./img/1610303625_1408537973_a-4.jpg')"></i>
+					<i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img"
+						style="background-image: url('./img/1610303625_1408537973_a-4.jpg')"></i>
+					<i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img"
+						style="background-image: url('./img/1610303625_1408537973_a-4.jpg')"></i>
+					<i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img"
+						style="background-image: url('./img/1610303625_1408537973_a-4.jpg')"></i>
+					<!-- <i class="c-gradient-overlay"></i> -->
+				</div>
+			<!-- </div> -->
 		</div>
-
-		<div class="menu__container">
-			<div class="menu__item menu__item_type_active">
-				<h3 class="">1(первый)</h3>
-				<img src="img/future-5.jpg">
-			</div>
-			<div class="menu__item menu__item_type_next">
-				<h3 class="">2</h3>
-				<img src="img/future-4.jpg">
-			</div>
-
-			<div class="menu__item ">
-				<h3 class="">3</h3>
-				<img src="img/future-3.jpg">
-			</div>
-			<div class="menu__item ">
-				<h3 class="">4</h3>
-				<img src="img/future-2.jpg">
-			</div>
-			<div class="menu__item menu__item_type_prev">
-				<h3 class="">5(последний)</h3>
-				<img src="img/future-1.jpg">
-			</div>
 		</div>
 	</section>
 
@@ -201,6 +240,7 @@
 	<!-- /Yandex.Metrika counter -->
 
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/TweenMax.js"></script>
 	<script src="js/common.js"></script>
 
 </body>
