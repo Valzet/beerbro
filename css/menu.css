@@ -1,6 +1,6 @@
 .menu {
   background-color: #241e18;
-  background: url("../img/intro-bg2.jpg") repeat-y 100% 0;
+  background: url("../img/intro-bg11.jpg") repeat-y 100% 0;
   background-size: cover;
 }
 
@@ -15,6 +15,28 @@
   width: 100%;
   margin: 0 auto;
   padding: 40px 0;
+}
+
+.menu-button {
+  display: none;
+  vertical-align: top;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  font-family: "Podkova", serif;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.4s ease-in-out;
+  background-color: #a93e3e;
+  box-shadow: 3px 3px 3px #a54c4c;
+  padding: 12px 18px;
+  font-size: 12px;
+  margin: 80px;
+}
+.menu-button .call-button:hover {
+  background-color: #dd3434;
 }
 
 .c-header {
@@ -76,42 +98,19 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 50%;
-  height: 100%;
-  background-size: cover;
+  width: 40%;
+  height: 90%;
+  background-size: 110%;
   background-position: center;
   will-change: transform;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 768px) {
-  .u-a5 {
-    font-size: 27px;
+  .u-media-wrapper {
+    display: none;
   }
-}
-@media screen and (max-width: 580px) {
-  .u-a5 {
-    font-size: 20px;
-  }
-  .c-mouse-vertical-carousel {
-    position: relative;
-    overflow: hidden;
-  }
-  .c-mouse-vertical-carousel__list {
-    position: absolute;
-    left: 0;
-    top: 20%;
-    z-index: 1;
-    list-style: none;
-    padding: 0;
-  }
-}
-@media screen and (max-width: 480px) {
-  .u-a5 {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 360px) {
-  .u-a5 {
-    font-size: 12px;
+  .menu-button {
+    display: inline-block;
   }
 }
