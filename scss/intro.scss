@@ -16,7 +16,6 @@
         text-align: center;
 
         .intro__title {
-            font-family: 'Podkova', serif;
             font-size: 50px;
             line-height: 1.1;
             color: #fff;
@@ -26,7 +25,6 @@
         }
 
         .intro__subtitle {
-            font-family: 'Podkova', serif;
             font-size: 28px;
             color: #fff;
             line-height: 1.5;
@@ -39,11 +37,11 @@
             margin-top: 40px;
             display: inline-block;
             vertical-align: top;
-            padding: 14px 40px;
+            padding: 8px 0;
+            width: 200px;
             border-radius: 4px;
             border: 0;
             cursor: pointer;
-            font-family: 'Podkova', serif;
             font-size: 16px;
             color: #fff;
             font-weight: 500;
@@ -52,6 +50,7 @@
             transition: background .4s ease-in-out;
             background-color: #a93e3e;
             box-shadow: 3px 3px 3px #a54c4c;
+            margin: 10px;
         }
 
         .call-button:hover {
@@ -109,6 +108,7 @@
 @media screen and (max-width: 520px) {
     .intro {
         height: 520px;
+        padding-bottom: 40px;
 
         .intro__inner {
 
@@ -124,9 +124,12 @@
             }
 
             .call-button {
-                margin-top: 0;
+                
                 padding: 12px 18px;
-                font-size: 14px;
+                font-size: 12px;
+                width: 180px;
+                margin: 0;
+                margin-top: 10px;
             }
         }
     }

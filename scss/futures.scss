@@ -23,7 +23,7 @@
             justify-content: center;
             width: 100%;
             height: 100%;
-            background-color: #2b1f1fe6;
+            background-color: #1d1b1be6;
             opacity: 0;
             text-align: center;
             position: absolute;
@@ -51,6 +51,11 @@
     .futures__item:hover .futures__content {
         opacity: 1;
     }
+}
+
+.empty__block {
+    height: 5vh;
+    background: url("../img/intro-bg11.jpg") repeat-y;
 }
 
 @media screen and (max-width: 768px) {
@@ -104,5 +109,47 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .futures {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1px;
+
+        .futures__item {
+            height: 150px;
+
+        
+            .futures__content {
+                width: 100%;
+                height: 100%;
+
+                .futures__title {
+                    margin: 0 10px 15px;
+                    font-size: 18px;
+                }
+
+                .futures__text {
+                    margin: 0 10px 5px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .futures {
+
+
+        .futures__item {
+
+            .futures__photo { 
+                width: 320px;
+
+            }
+ }
     }
 }

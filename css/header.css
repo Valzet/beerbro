@@ -11,7 +11,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 35px 0;
-  border-bottom: 2px solid #626358;
   margin: 0 20px;
 }
 .header .header__inner .header__burger {
@@ -109,8 +108,34 @@
   }
   .header .header__inner .nav.active {
     top: 50px;
+    width: 200px;
   }
   .header__logo {
     width: 20%;
+  }
+}
+@media screen and (max-width: 430px) {
+  .header .header__inner .nav {
+    font-size: 12px;
+    width: 20%;
+    height: 86px;
+  }
+  .header .header__inner .nav .nav__link {
+    margin-left: 0;
+    margin-bottom: 5px;
+    text-align: right;
+  }
+  .header .header__inner .nav.active {
+    top: 18px;
+    right: 60px;
+    margin-right: 0;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .header .header__inner .nav.active {
+    top: 9px;
+    right: 60px;
+    font-size: 10px;
   }
 }
