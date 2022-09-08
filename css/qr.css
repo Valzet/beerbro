@@ -2,14 +2,14 @@ body {
   margin: 0;
   font-family: "Podkova", sans-serif;
   font-size: 14px;
-  color: #6c7279;
-  background-color: black;
+  color: #fff;
+  background-color: #494d4e;
 }
 
 a {
   text-decoration: none;
   color: #fff;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 *,
@@ -56,4 +56,16 @@ a {
 }
 .container .btn--red:hover {
   background-color: #dd3434;
+}
+
+
+@media screen and (max-width: 768px) {
+  a {
+
+    font-size: 20px;
+  }
+
+  .container .btn {
+    font-size: 12px;
+  }
 }
