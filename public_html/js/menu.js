@@ -51,20 +51,10 @@ class VerticalMouseDrivenCarousel {
 	}
 
 	initCursor() {
-		// const listHeight = this.getList().clientHeight;
-		// const carouselHeight = this.getCarousel().clientHeight;
-
 		this.getCarousel().addEventListener(
 			"mousemove",
 			event => {
 				this.posY = event.pageY - this.getCarousel().offsetTop;
-				// let offset = -this.posY / carouselHeight 
-                // * listHeight;
-
-				// TweenMax.to(this.getList(), 0.3, {
-				// 	y: offset,
-				// 	ease: Power4.easeOut
-				// });
 			},
 			false
 		);

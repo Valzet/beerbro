@@ -1,7 +1,7 @@
 .menu {
-    background-color: #241e18;
-    background: url("../img/intro-bg2.jpg") repeat-y 100% 0;
-    background-size: cover;
+	background-color: #241e18;
+	background: url("../img/intro-bg2.jpg") repeat-y 100% 0;
+	background-size: cover;
 }
 
 .menu__content {
@@ -11,11 +11,10 @@
 	justify-content: center;
 	align-items: center;
 	align-content: stretch;
-	// min-height: 100vh;
-    max-width: 970px;
+	max-width: 970px;
 	width: 100%;
 	margin: 0 auto;
-    padding: 40px 0;
+	padding: 40px 0;
 }
 
 .c-header {
@@ -24,12 +23,10 @@
 }
 
 .u-a5 {
-	font-family: Arial;
 	font-size: 37px;
-	line-height: 35px;
 	letter-spacing: 5px;
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 500;
 	text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 	color: #fff;
 }
@@ -41,39 +38,23 @@
 	background-size: cover;
 	background-position: center;
 	height: 0;
-    margin: 0 20px;
+	margin: 0 20px;
+
 	&#{&}--16-9 {
 		padding-bottom: percentage(9/16);
 	}
 }
-
-// GRADIENT IMAGE OVERLAY
-// .c-gradient-overlay {
-// 	position: absolute;
-// 	display: block;
-// 	left: 0;
-// 	top: 0;
-// 	width: 100%;
-// 	height: 100%;
-// 	background-image: radial-gradient(
-// 		circle at 49% 50%,
-// 		rgba(2, 21, 25, 0.3),
-// 		rgba(2, 21, 25, 0.6)
-// 	);
-// }
 
 .c-mouse-vertical-carousel {
 	position: relative;
 	overflow: hidden;
 
 	&__list {
-		width: 100%;
 		position: absolute;
 		left: 0;
 		top: 20%;
 		z-index: 1;
-        list-style: none;
-
+		list-style: none;
 	}
 
 	&__list-item {
@@ -111,3 +92,43 @@
 		will-change: transform;
 	}
 }
+
+@media screen and (max-width: 768px) {
+	.u-a5 {
+		font-size: 27px;
+
+	}
+
+
+}
+
+@media screen and (max-width: 580px) { 
+	.u-a5 {
+		font-size: 20px;
+
+	}
+
+	.c-mouse-vertical-carousel {
+		position: relative;
+		overflow: hidden;
+	
+		&__list {
+			position: absolute;
+			left: 0;
+			top: 20%;
+			z-index: 1;
+			list-style: none;
+			padding: 0;
+		}}
+}
+
+@media screen and (max-width: 480px) { 
+	.u-a5 {
+		font-size: 14px;
+
+	}}
+	@media screen and (max-width: 360px) { 
+		.u-a5 {
+			font-size: 12px;
+	
+		}}
